@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency exchange</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-screen w-screen flex justify-center items-center">
+      <div class="w-80 flex flex-col gap-5">
+        <h1 class="text-3xl text-gray-700 font-bold">My currency exchange</h1>
+        <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-3">
+            <label for="currencyAmount">Amount</label>
+            <input
+              class="px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              type="number"
+              name="amount"
+              id="currencyAmount"
+            />
+          </div>
+          <div class="flex gap-5">
+            <div class="flex w-1/2 items-center gap-3">
+              <label for="fromCurrency">From</label>
+              <select
+                class="w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="fromCurrency"
+              ></select>
+            </div>
+            <div class="flex w-1/2 items-center gap-3">
+              <label for="toCurrency">To</label>
+              <select
+                class="w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="toCurrency"
+              ></select>
+            </div>
+          </div>
+          <button
+            class="px-6 py-4 bg-blue-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            id="convertBtn"
+            disabled
+            onclick="convertExchange()"
+          >
+            Convert
+          </button>
+        </div>
+
+        <h3 class="text-gray-700 text-5xl" id="convertedAmount">0.00</h3>
+
+        <button
+          id="saveBtn"
+          onclick="saveList()"
+          class="px-6 py-4 bg-blue-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out disabled:bg-gray-200"
+          disabled
+        >
+          Save
+        </button>
+
+        <ul id="userList" class="flex flex-col divide-y"></ul>
+        <button
+          class="px-6 py-4 bg-red-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+          id="deleteBtn"
+          onclick="deleteList()"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

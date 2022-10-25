@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center-box">
+        <h1 id="counter-value">
+            0
+        </h1>
+        <div>
+            <button class="counter-button" onclick=counterModifier(0)>
+                Decrease
+            </button>
+            <button class="counter-button" onclick=counterModifier(1)>
+                Increase
+            </button>
+        </div>
+    </div>
+    <div class="center-box">
+        <div>
+            <video id="video-player" width="100%" controls>
+                <source src="assets/video1.mp4" type="video/mp4">
+            </video>
+            <div>
+                <button class="counter-button" onclick=videoController("play") >
+                    Play / Pause
+                </button>
+                <button class="counter-button" onclick=videoController("reset")>
+                    Reset
+                </button>
+                <button class="counter-button" onclick=videoController("volDown")>
+                    Vol Down
+                </button>
+                <button class="counter-button" onclick=videoController("volUp")>
+                    Vol Up
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var counterValue = 0
+
+    var counterDisplay = document.getElementById("counter-value")
+
+    var videoPlayer = document.querySelector("#video-player")
+
+    console.log(videoPlayer)
+
+    function counterModifier(direction){
+        switch(direction){
+            case 0: 
+                if(counterValue > 0){
+                    counterValue -= 1
+                }
+                break
+            case 1:
+                counterValue += 1
+                break
+            default :
+                break
+        }
+
+        counterDisplay.innerHTML = counterValue
+
+        if(counterValue > 0 && counterValue < 10){
+            counterDisplay.style.color = "yellow"
+        } else if(counterValue >= 10){
+            counterDisplay.style.color = "blue"
+        } else {
+            counterDisplay.style.color="black"
+        }
+
+    }
+    
+    //ES6 Arrow function
+    const videoController = (parameter) => {
+        switch(parameter){
+            case "play":
+                // if(!videoPlayer.paused)
+                if(videoPlayer.paused === false){
+                    videoPlayer.pause()
+                } else videoPlayer.play()
+                break
+            case "reset":
+                videoPlayer.currentTime = 0
+                break
+            case "volUp":
+                if(videoPlayer.volume < 0.9){
+                    videoPlayer.volume += 0.1
+                }
+                break
+            case "volDown":
+                if(videoPlayer.volume > 0.1){
+                    videoPlayer.volume -= 0.1
+                }
+                break
+            default :
+                break
+        }
+    }
+</script>
+
+

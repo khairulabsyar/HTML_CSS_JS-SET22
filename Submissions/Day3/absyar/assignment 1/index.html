@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      #main-container {
+        background-color: darkblue;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .word {
+        text-transform: uppercase;
+        position: absolute;
+        font-family: "Bebas Neue", cursive;
+      }
+      .small-white-box {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: white;
+        top: 20vh;
+        left: 10vw;
+      }
+      .small-red-box {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-color: red;
+        top: 20px;
+        left: 1.5vw;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 3px;
+      }
+      .text-next-to-small-box {
+        font-size: 50px;
+        top: 21vh;
+        left: 16vw;
+      }
+      .main-text {
+        font-size: 145px;
+        top: 30vh;
+        left: 10vw;
+        width: 750px;
+        z-index: 7;
+      }
+      .desc-box {
+        font-size: 30px;
+        width: 500px;
+        bottom: 17vh;
+        left: 10vw;
+      }
+      .desc-box .right-box {
+        position: absolute;
+        display: flex;
+      }
+      .desc-box .left-box {
+        position: absolute;
+        display: flex;
+        right: 0;
+      }
+      .desc-box img {
+        margin-right: 10px;
+      }
+      .window-1 {
+        box-sizing: border-box;
+        border: 30px solid white;
+        height: 400px;
+        width: 300px;
+        position: absolute;
+        right: 125px;
+        top: 170px;
+        z-index: 5;
+      }
+      .window-2 {
+        box-sizing: border-box;
+        border: 15px solid red;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        right: 200px;
+        top: 250px;
+        z-index: 4;
+      }
+      .window-3 {
+        box-sizing: border-box;
+        border: 15px solid white;
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        right: 237px;
+        top: 285px;
+        z-index: 3;
+      }
+      .window-4 {
+        box-sizing: border-box;
+        border: 15px solid blue;
+        height: 75px;
+        width: 50px;
+        position: absolute;
+        right: 300px;
+        top: 425px;
+      }
+      .circle {
+        box-sizing: border-box;
+        border: 15px solid white;
+        height: 75px;
+        width: 50px;
+        position: absolute;
+        right: 200px;
+        top: 425px;
+        border-radius: 1000px;
+      }
+      .window-5 {
+        box-sizing: border-box;
+        border: 44.5px solid #48596d;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: -103px;
+        top: -55px;
+        z-index: 2;
+      }
+      .window-6 {
+        box-sizing: border-box;
+        border: 42px solid #2d2f48;
+        height: 500px;
+        width: 450px;
+        position: absolute;
+        right: 252px;
+        bottom: -136px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="small-white-box">
+        <div class="small-red-box">R</div>
+      </div>
+      <p class="word text-next-to-small-box">warmups</p>
+      <p class="word main-text">LOREM IPSUM Neque porro</p>
+      <div class="word desc-box">
+        <div class="right-box">
+          <img src="./Assets/people.png" alt="" />
+          <p>10 max.</p>
+        </div>
+        <div class="left-box">
+          <img src="./Assets/time.png" alt="" />
+          <p>20min</p>
+        </div>
+      </div>
+      <div class="window-1"></div>
+      <div class="window-2"></div>
+      <div class="window-3"></div>
+      <div class="window-4"></div>
+      <div class="circle"></div>
+      <div class="window-5"></div>
+      <div class="window-6"></div>
+    </div>
+  </body>
+</html>

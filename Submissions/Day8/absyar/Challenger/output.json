@@ -1,0 +1,145 @@
+challengeOutput = {
+    "challenge0":[
+<<<<<<< HEAD:Submissions/Day8/absyar/Challenger/output.json
+        2,
+        3,
+        4
+    ],
+    "challenge1":[
+        "dlroWolleh",
+        "Racecar",
+        "sedud ym pu si tahW"
+    ],
+    "challenge2":[
+        [27, 5, 39, 1001],
+        [9, 35, 97, 1000000],
+        [25, 48, 21, -3]
+    ],
+    "challenge3":[
+        "A quick b...",
+        "A quick brown...",
+        "A quick brown fox jumped over a lazy dog",
+        "A quick brown fox jumped over a lazy dog",
+        "Ab..."
+    ],
+    "challenge4":[
+        "*-*-*-",
+        "123432123432123432",
+        "abcabcabcabc",
+        "zyx",
+        "",
+        ""
+    ],
+    "challenge5":[
+        [1, 1],
+        [],
+        ["hamburger"],
+        [12,92,65]
+    ],
+    "challenge6":[
+        "Let us go to the mall",
+        "This has a spelling error",
+        "He is sitting on the couch",
+        "His name is John"
+    ],
+    "challenge7":[
+        [1, 3, 2, 5, 4],
+        [1, 2, 3, 5],
+        [1, 2, 3, 5, 4, 6, 7, 8],
+        [1, 3, 2, 5, 4, 6]
+    ],
+    "challenge8":[
+        "d",
+        "i",
+        "u",
+        "e",
+        undefined
+    ],
+    "challenge9":[
+        [4],
+        ["pink wool"],
+        ["diorite", "pink wool"],
+        []
+    ],
+    "challenge10":[
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+    ],
+    "challenge11":[
+        "II",
+        "III",
+        "IV",
+        "V",
+        "IX",
+        "XII",
+        "XVI",
+        "XXIX",
+        "XLIV",
+        "XLV",
+        "LXVIII",
+        "LXXXIII",
+        "XCVII",
+        "XCIX",
+        "CD",
+        "D",
+        "DI",
+        "DCXLIX",
+        "DCCXCVIII",
+        "DCCCXCI",
+        "M",
+        "MIV",
+        "MVI",
+        "MXXIII",
+        "MMXIV",
+        "MMMCMXCIX"
+    ]
+=======
+        3,
+        4,
+        5
+    ],
+    "challenge1":[
+       -22,
+        14,
+        32,
+        68,
+        86
+    ],
+    "challenge2":[
+        -30,
+        -10,
+        0,
+        20,
+        30
+    ],
+    "challenge3":[
+        "-30C",
+        "-22F",
+        "30C",
+        "86F"
+    ],
+    "challenge4":[
+        [7, "ate", 9],
+        ["a", "b", "c"],
+        [],
+        [1, 2]
+    ],
+    "challenge5":[
+        6,
+        5,
+        6,
+        8,
+        19
+    ],
+>>>>>>> 4cfb8172bb6cdb8345faca61abe17cd259762003:Materials/Day10/morning/Challenger/output.json
+}

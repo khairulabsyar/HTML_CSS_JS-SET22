@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="h-min-screen w-screen flex flex-col xl:flex-row">
+      <div
+        class="h-[800px] xl:h-screen w-full xl:sticky xl:top-0 xl:w-2/5 flex flex-col gap-7 justify-center items-center bg-gray-100"
+      >
+        <h1 class="text-3xl text-gray-700 font-bold">My API Dictionary</h1>
+        <form onsubmit="searchWord(event)" class="w-[95%] xl:w-[500px]">
+          <input
+            type="text"
+            name="word"
+            id="word"
+            placeholder="What is your word today?"
+            class="w-full px-3 py-3 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+          />
+          <button
+            class="w-full px-6 py-4 bg-blue-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <div
+          class="bg-red-500 rounded-md w-[95%] xl:w-[500px] p-3 flex justify-center"
+        >
+          <p class="text-white align-center">An error has occured. Try again</p>
+        </div>
+        <div
+          class="bg-white rounded-md w-[95%] xl:w-[500px] max-h-[400px] group hover:bg-[rgba(0,0,0,0.1)] border border-solid border-gray-400 p-5 relative overflow-scroll"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">
+            Replace the searched word here
+          </h5>
+          <p class="font-bold mb-2">Definition(s)</p>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+           
+          </ul>
+          <div
+            class="flex justify-center items-center absolute top-0 left-0 w-full h-full  transition-all"
+          >
+            <button
+              class="w-1/2 opacity-0 group-hover:opacity-100 transition-all px-6 py-4 bg-blue-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Add to favourite
+            </button>
+          </div>
+        </div>
+        <p class="text-gray-500">Open source API from <a href="https://dictionaryapi.dev/" class="text-blue-500 underline">https://dictionaryapi.dev/</a> </p>
+      </div>
+      <div
+        class="bg-blue-600 w-full xl:w-3/5 columns-1 xl:columns-2 gap-4 py-20 xl:px-10 overscroll-x-auto"
+      >
+        <div
+          class="bg-gray-100 w-[95%] xl:w-full rounded-md p-5 overflow-scroll my-0 mx-auto mb-4 relative"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">Word 1</h5>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center absolute inset-0 w-full h-full group hover:bg-[rgba(0,0,0,0.1)] transition-all"
+          >
+            <button
+              class="opacity-0 group-hover:opacity-100 transition-all px-4 py-3 bg-red-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 w-[95%] xl:w-full rounded-md p-5 overflow-scroll my-0 mx-auto mb-4 relative"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">Word 1</h5>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center absolute inset-0 w-full h-full group hover:bg-[rgba(0,0,0,0.1)] transition-all"
+          >
+            <button
+              class="opacity-0 group-hover:opacity-100 transition-all px-4 py-3 bg-red-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 w-[95%] xl:w-full rounded-md p-5 overflow-scroll my-0 mx-auto mb-4 relative"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">Word 1</h5>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+           
+          </ul>
+          <div
+            class="flex justify-center items-center absolute inset-0 w-full h-full group hover:bg-[rgba(0,0,0,0.1)] transition-all"
+          >
+            <button
+              class="opacity-0 group-hover:opacity-100 transition-all px-4 py-3 bg-red-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 w-[95%] xl:w-full rounded-md p-5 overflow-scroll my-0 mx-auto mb-4 relative"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">Word 1</h5>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center absolute inset-0 w-full h-full group hover:bg-[rgba(0,0,0,0.1)] transition-all"
+          >
+            <button
+              class="opacity-0 group-hover:opacity-100 transition-all px-4 py-3 bg-red-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 w-[95%] xl:w-full rounded-md p-5 overflow-scroll my-0 mx-auto mb-4 relative"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">Word 1</h5>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center absolute inset-0 w-full h-full group hover:bg-[rgba(0,0,0,0.1)] transition-all"
+          >
+            <button
+              class="opacity-0 group-hover:opacity-100 transition-all px-4 py-3 bg-red-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 w-[95%] xl:w-full rounded-md p-5 overflow-scroll my-0 mx-auto mb-4 relative"
+        >
+          <h5 class="text-xl text-gray-700 font-bold mb-4">Word 1</h5>
+          <ul class="list-disc pl-4 flex flex-col gap-3 text-gray-500">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              obcaecati soluta consectetur nemo eum. Non illo ab cupiditate hic
+              autem?
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center absolute inset-0 w-full h-full group hover:bg-[rgba(0,0,0,0.1)] transition-all"
+          >
+            <button
+              class="opacity-0 group-hover:opacity-100 transition-all px-4 py-3 bg-red-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

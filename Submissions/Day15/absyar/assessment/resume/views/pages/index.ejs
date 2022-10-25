@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>Your Resume Builder</h1>
+      <br />
+      <form action="/resume" method="post">
+        <% personalData.forEach(element => { %>
+        <%-include('../components/formInput.ejs', {id:element.id, label:element.label,type:element.type,placeholder:element.placeholder}); %> 
+        <% }) %>
+        <p>Socials:</p>
+        <% socialData.forEach(element => { %>
+          <%-include('../components/formInput.ejs', {id:element.id, label:element.label,type:element.type,placeholder:element.placeholder}); %> 
+          <% }) %>
+        <button type="submit">Submit</button>
+        <!-- <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" />
+        </div> -->
+        <!-- <div>
+          <label for="age">Age: </label>
+          <input type="number" name="age" id="age" />
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="name@email.com"
+          />
+        </div>
+        <div>
+          <label for="personalInfo">Personal Description: </label>
+          <input type="text" name="personalInfo" id="personalInfo" />
+        </div>
+        <div>
+          <label for="education">Education Background: </label>
+          <input type="text" name="education" id="education" />
+        </div> -->
+
+          <!-- <div>
+            <label for="github">GitHub: </label>
+            <input
+            type="url"
+            name="github"
+            id="github"
+            placeholder="https://github.com/your-git-hub"
+            />
+          </div>
+          <div>
+            <label for="twitter">Twitter: </label>
+            <input
+              type="url"
+              name="twitter"
+              id="twitter"
+              placeholder="https://www.twitter.com/your-twitter-account"
+            />
+          </div>
+          <div>
+            <label for="linkedin">Linkedin: </label>
+            <input
+              type="url"
+              name="linkedin"
+              id="linkedin"
+              placeholder="https://www.linked.com/your-LinkedIn-account"
+            />
+          </div> -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

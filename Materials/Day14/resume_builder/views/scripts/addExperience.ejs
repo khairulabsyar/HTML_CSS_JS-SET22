@@ -1,0 +1,72 @@
+<script>
+  // count number of children
+  let experienceArray = document.getElementById("experienceArray");
+  let childrenCount = experienceArray.childElementCount;
+
+  // add new div
+  const createNewDiv = () => {
+    let newDiv = document.createElement("div");
+    newDiv.classList.add(
+      "flex",
+      "flex-col",
+      "gap-2",
+      "border-2",
+      "border-gray-100",
+      "rounded-md",
+      "p-5"
+    );
+    return newDiv;
+  };
+
+  const createNewLabel = (label) => {
+    let newLabel = document.createElement("label");
+    newLabel.innerText = label;
+    return newLabel;
+  };
+
+  const createNewInput = (id, placeholder) => {
+    let newInput = document.createElement(
+      id.includes("description") ? "textarea" : "input"
+    );
+    id.includes("description") ? newInput.setAttribute("rows", 4) : null;
+    newInput.setAttribute("type", "text");
+    newInput.setAttribute("placeholder", placeholder);
+    newInput.setAttribute("id", id);
+    newInput.setAttribute("name", id);
+    newInput.classList.add(
+      "px-3",
+      "py-3",
+      "text-base",
+      "font-normal",
+      "text-gray-700",
+      "bg-white",
+      "bg-clip-padding",
+      "border",
+      "border-solid",
+      "border-gray-300",
+      "rounded",
+      "transition",
+      "ease-in-out",
+      "m-0",
+      "focus:text-gray-700",
+      "focus:bg-white",
+      "focus:border-blue-600",
+      "focus:outline-none",
+      "resize-none"
+    );
+    return newInput;
+  };
+
+  const addColumn = (e) => {
+    e.preventDefault();
+    const container = createNewDiv();
+    <% data.forEach(item => { %>
+      container.appendChild(createNewLabel('<%= item.label %>'));
+    container.appendChild(
+      createNewInput(`<%= item.id %>[${childrenCount}]`, '<%= item.placeholder %>')
+    );
+     <% }) %>
+    experienceArray.appendChild(container);
+    console.log(childrenCount++);
+  };
+</script>

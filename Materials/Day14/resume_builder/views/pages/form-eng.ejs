@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../components/head') %>
+  </head>
+  <body>
+    <div class="w-screen flex flex-col items-center py-8">
+      <div style="width: 800px">
+        <h1 class="text-3xl text-gray-700 font-bold">Resume generator</h1>
+        <form action="/resume" method="post" class="flex flex-col gap-4 mt-5">
+          <% data.personalInfo.forEach(function(item){ %> <%-
+          include('../components/label-input',{id:item.id,label:item.label,textarea:item?.textarea})
+          %> <% }); %>
+          <div class="flex flex-col gap-5">
+            <label class="text-md text-gray-600 font-medium">
+              Experiences
+            </label>
+            <%-
+            include('../components/experience-input',{data:data.experienceArray});
+            %>
+            <button
+              class="border-2 border-solid border-blue-600 px-6 py-4 bg-white text-blue-600 font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              onclick="addColumn(event)"
+            >
+              Add experience
+            </button>
+          </div>
+          <button
+            type="submit"
+            class="px-6 py-4 bg-blue-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+          >
+            Generate
+          </button>
+        </form>
+      </div>
+    </div>
+    <%- include('../scripts/addExperience',{data:data.experienceArray}); %>
+  </body>
+</html>

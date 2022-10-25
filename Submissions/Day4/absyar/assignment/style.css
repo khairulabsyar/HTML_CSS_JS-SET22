@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#main-section {
+  background-image: url(/assets/Rectangle\ 1.png);
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+#navbar {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.white {
+  color: white;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.small-box {
+  width: 100%;
+  display: flex;
+}
+.left-side {
+  align-items: center;
+  padding-left: 50px;
+}
+.middle-side {
+  justify-content: space-between;
+  align-items: center;
+}
+.list {
+  list-style: none;
+}
+.right-side {
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+.main-section-hero {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.explore {
+  font-size: 25px;
+}
+.norway {
+  font-size: 250px;
+}
+.sub-section-hero {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.sub-section-card {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding-left: 25px;
+  gap: 10px;
+}
+.transparent {
+  color: rgba(255, 255, 255, 0.75);
+}
+.activities-section {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+.activities-section-head {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.activities-section-head > .desc-size {
+  font-size: 25px;
+}
+.activities-section-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 60%;
+}
+.activities-section-card {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.rectangle-1 {
+  background-image: url(./assets/Rectangle\ 2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rectangle-2 {
+  background-image: url(./assets/Rectangle\ 3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rectangle-3 {
+  background-image: url(./assets/Rectangle\ 4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rectangle-4 {
+  background-image: url(./assets/Rectangle\ 5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.philosophy-section {
+  /* background-image: url(/Submissions/Day4/assignment/assets/Rectangle\ 1.png); */
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+.philosophy-section-box {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70%;
+}
+.philosophy-section-card-1 {
+  width: 50%;
+  display: flex;
+}
+.rectangle-5 {
+  background-image: url(./assets/Rectangle\ 6.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+  border-radius: 5px;
+}
+.philosophy-section-card-2 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+.philosophy-section-mini-card {
+  height: 30%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.silver {
+  color: #9b9b9b;
+}
+.rectangle-6 {
+  background-image: url(./assets/Rectangle\ 9.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rectangle-7 {
+  background-image: url(./assets/Rectangle\ 10.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rectangle-8 {
+  background-image: url(./assets/Rectangle\ 11.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.beauties-section {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  margin-bottom: 50px;
+}
+.beauties-section-head {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.beauties-section-head > .desc-size {
+  font-size: 25px;
+}
+.beauties-section-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 215px;
+}
+.beauties-section-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.beauties-section-box p {
+  font-size: 20px;
+}
+
+.network-section {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.network-section-head {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.network-section-head > .desc-size {
+  font-size: 25px;
+}
+.network-section-box {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  height: 100%;
+  align-items: center;
+}
+.network-section-box img {
+  width: 225px;
+  height: 125px;
+}
+.testimonial-section {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.rectangle-9 {
+  background-image: url(./assets/rectangle\ 12.png);
+  height: 80%;
+  width: 75%;
+  border-radius: 10px;
+  background-size: cover;
+  display: flex;
+  gap: 2px;
+  justify-content: space-around;
+  align-items: center;
+}
+.testimonial-section-card {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-section-mini-card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.fa-quote-left {
+  color: #ff9921;
+}
+.fa-caret-down {
+  color: white;
+  padding: 2px 0 0 20px;
+}
+.testimonial-section-mini-card > img {
+  width: 10px;
+  height: 10px;
+}
+.testimonial-section-card-human {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  padding-top: 20px;
+  gap: 10px;
+}
+.testimonial-section-card-human p {
+  color: silver;
+}
+.footer-section {
+  width: 100vw;
+  height: 450px;
+  background-color: #0c2f3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-section-head {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  height: 40%;
+}
+.footer-box {
+  display: flex;
+  color: white;
+  width: 70%;
+}
+hr {
+  width: 80%;
+}
+.connection {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.travelx {
+  font-size: 30px;
+}
+.brands {
+  margin-right: 10px;
+}

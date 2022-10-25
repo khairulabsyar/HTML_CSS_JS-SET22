@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SET Day 2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      button {
+        border-radius: 1000px;
+        padding: 10px;
+        border: none;
+      }
+      .section-full {
+        background-color: #c5e6f9;
+      }
+      .section-container {
+        display: block;
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .column-right {
+        float: right;
+      }
+      .column-left {
+        float: left;
+      }
+      /* NAVBAR */
+      .navbar {
+        padding-right: 50px;
+      }
+      .navbar img {
+        display: inline;
+        margin-top: 5px;
+      }
+      #navbar {
+        display: inline;
+        margin-top: 20px;
+      }
+      #navbar li {
+        display: inline;
+        margin-top: 15px;
+        margin-right: 15px;
+      }
+      /* HERO */
+      #hero {
+        background-color: #c5e6f9;
+        height: 500px;
+        text-align: center;
+      }
+      #hero h1 {
+        padding-top: 120px;
+        font-weight: bold;
+      }
+      #hero h3 {
+        margin-top: 35px;
+        margin-left: 175px;
+        margin-right: 175px;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+      }
+      .gradientButton {
+        background-image: linear-gradient(
+          90deg,
+          #0067f4 -3.33%,
+          #0067f4 17.47%,
+          rgba(43, 219, 220, 0.5) 114.17%
+        );
+        color: white;
+      }
+      .gradientButton a {
+        color: white;
+      }
+      .extrabtn a {
+        color: #3182ce;
+      }
+      /* SERVICES */
+      #services {
+        display: block;
+        height: 600px;
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-left: 85px;
+      }
+
+      #servicesDesc {
+        width: 600px;
+      }
+      .specialty img {
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin-top: 10px;
+      }
+      .services-image {
+        width: 500px;
+      }
+      .specialtyContainer .column-left {
+        width: 275px;
+      }
+      .specialtyContainer .column-right {
+        width: 275px;
+      }
+      .specialtyInnerRight {
+        float: right;
+        width: 200px;
+      }
+      /* tanya pasal specialty float width */
+
+      /* PRICING */
+      #pricing {
+        text-align: center;
+      }
+      #pricing .section-container > p {
+        width: 500px;
+        margin: 0 auto;
+      }
+      .pricing-container {
+        margin: 50px 0 50px 0;
+      }
+      .pricing-card {
+        width: 300px;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: inline-block;
+        margin-right: 25px;
+      }
+      .package {
+        text-transform: uppercase;
+        border-bottom: 3px solid black;
+        display: inline-block;
+      }
+      .price {
+        font-size: 40px;
+        display: block;
+      }
+      .price span {
+        font-size: 24px;
+      }
+      .price .currency {
+        font-size: 16px;
+        display: block;
+      }
+      .package-info {
+        text-align: left;
+      }
+      .package-info p {
+        margin: 10px 0 10px 0;
+      }
+      /* NEWSLETTER */
+      #newsletter {
+        height: 400px;
+      }
+      #newsletter .column-left {
+        background-image: url("Assets/call-to-action.svg");
+        height: 400px;
+        width: 50%;
+        background-size: cover;
+      }
+      #newsletter .column-right {
+        background-color: #3182ce;
+        height: 400px;
+        width: 50%;
+        color: white;
+        text-align: center;
+      }
+      #newsletter .column-right > h1 {
+        width: 304px;
+        margin-top: 100px;
+        margin-left: 190px;
+      }
+      #newsletter .column-right > p {
+        width: 430px;
+        text-transform: capitalize;
+        margin-top: 20px;
+        margin-left: 125px;
+      }
+      .form {
+        background-color: white;
+        display: inline-block;
+        padding: 8px 5px 8px 10px;
+        border-radius: 100px;
+        width: 400px;
+        margin-top: 30px;
+      }
+      #newsletter .column-right .form p {
+        display: inline;
+        width: 218px;
+        color: gray;
+      }
+      #newsletter img {
+        height: 15px;
+      }
+      #newsletter .column-right .form div {
+        background-color: #3182ce;
+        display: inline;
+        color: white;
+        margin-top: 5px;
+        padding: 5px 20px;
+        border-radius: 80px;
+      }
+      /* FOOTER */
+      footer {
+        background-color: #2a4365;
+        color: white;
+        text-align: center;
+        padding: 10px 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-full">
+        <section class="navbar section-container">
+          <img src="./Assets/company-logo.svg" alt="company logo" />
+          <ul id="navbar" class="column-right">
+            <li>HOME</li>
+            <li>SERVICES</li>
+            <li>PRICING</li>
+            <li>TESTIMONIAL</li>
+            <li>CONTACT</li>
+          </ul>
+        </section>
+      </div>
+      <div class="section-full">
+        <section id="hero" class="section-container">
+          <h1>Handcrafted Landing Page For Startups And SaaS Businesses</h1>
+          <h3>
+            A simple, customizable, and, beautiful SaaS business focused landing
+            page to make your project closer to launch!
+          </h3>
+          <button class="gradientButton"><a href="#">GET IN TOUCH</a></button>
+          <button class="extrabtn"><a href="#">WATCH THE VIDEO</a></button>
+        </section>
+      </div>
+      <hr />
+      <section id="services">
+        <div id="servicesDesc" class="column-left">
+          <h1>Crafted for</h1>
+          <p>
+            Stop wasting time and money designing and managing a website that
+            does not get results. Happiness guaranteed!
+          </p>
+          <div class="specialtyContainer">
+            <div class="column-left">
+              <div class="specialty">
+                <img src="./Assets/lightning-logo.svg" alt="lighting logo" />
+                <div class="specialtyInnerRight">
+                  <h4>Startup</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, ex!
+                  </p>
+                </div>
+              </div>
+              <div class="specialty">
+                <img src="./Assets/graph-logo.svg" alt="bar graph logo" />
+                <div class="specialtyInnerRight">
+                  <h4>SaaS Business</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, ex!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-right">
+              <div class="specialty">
+                <img src="./Assets/company-logo.svg" alt="building logo" />
+                <div class="specialtyInnerRight">
+                  <h4>Agency</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, ex!
+                  </p>
+                </div>
+              </div>
+              <div class="specialty">
+                <img src="./Assets/bulb.svg" alt="light bulb logo" />
+                <div class="specialtyInnerRight">
+                  <h4>App Landing</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, ex!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="services-image column-right"
+          src="Assets/services.svg"
+          alt=""
+        />
+      </section>
+      <section id="pricing">
+        <div class="section-container">
+          <h1>Our Pricing</h1>
+          <p>
+            Stop wasting time and money designing and managing a website that
+            doesnt get results. Happiness guaranteed!
+          </p>
+          <div class="pricing-container">
+            <div class="pricing-card">
+              <h3 class="package">Basic</h3>
+              <p class="price">
+                199<span>$</span> <span class="currency">per year</span>
+              </p>
+              <div class="package-info">
+                <p>Carefully Crafted Component</p>
+                <p>Amazing Page Examples</p>
+                <p>Super Friendly Support Team</p>
+                <p>Awesome Support</p>
+              </div>
+              <button class="gradientButton">GET STARTED</button>
+            </div>
+            <div class="pricing-card">
+              <h3 class="package">Pro</h3>
+              <p class="price">
+                399<span>$</span> <span class="currency">per year</span>
+              </p>
+              <div class="package-info">
+                <p>Carefully Crafted Component</p>
+                <p>Amazing Page Examples</p>
+                <p>Super Friendly Support Team</p>
+                <p>Awesome Support</p>
+              </div>
+              <button class="gradientButton">GET STARTED</button>
+            </div>
+            <div class="pricing-card">
+              <h3 class="package">Enterprise</h3>
+              <p class="price">
+                799<span>$</span> <span class="currency">per year</span>
+              </p>
+              <div class="package-info">
+                <p>Carefully Crafted Component</p>
+                <p>Amazing Page Examples</p>
+                <p>Super Friendly Support Team</p>
+                <p>Awesome Support</p>
+              </div>
+              <button class="gradientButton">GET STARTED</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="newsletter" class="section-full">
+        <div class="column-left"></div>
+        <div class="column-right">
+          <h1>Curious To Learn More? Stay Tuned</h1>
+          <p>
+            You let us know whenever you want us to update anything or think
+            something can be optimized.
+          </p>
+          <div class="form">
+            <p>
+              <img
+                src="/Submissions/Day2/absyar/Morning/Assets/email-logo.svg"
+                alt=""
+              />
+              johndoe@email.com
+            </p>
+            <div>SUBSCRIBE</div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Template Designed by HItesh Tapaniya (@Benzatine Infotech)</p>
+      </footer>
+    </div>
+  </body>
+</html>

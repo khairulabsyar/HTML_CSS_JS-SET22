@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#main-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#input-quantity {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#quantity {
+  width: 300px;
+  height: 50px;
+  size: 20px;
+}
+#from-currency,
+#to-currency {
+  width: 300px;
+  height: 20px;
+}
+#currency-input {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+button {
+  width: 300px;
+  height: 50px;
+}
+
+.output {
+  border: 1px solid black;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+.del-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+#save-currency {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

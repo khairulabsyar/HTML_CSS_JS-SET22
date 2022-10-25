@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Day 6 Assignment</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <div id="main-container">
+      <div id="left-container">
+        <video src="./assets/Boleh ke KAYA dengan SAHAM.mp4" id="video" controls type="video/mp4"></video>
+        <div class="control-list">
+          <button class="control-panels" onclick="mediaPlayer(`prev`)" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-bar-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z"/>
+              </svg></i>
+          </button>
+          <button class="control-panels" onclick="mediaPlayer(`down`)" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-down-fill" viewBox="0 0 16 16">
+                <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4zm3.025 4a4.486 4.486 0 0 1-1.318 3.182L10 10.475A3.489 3.489 0 0 0 11.025 8 3.49 3.49 0 0 0 10 5.525l.707-.707A4.486 4.486 0 0 1 12.025 8z"/>
+              </svg>
+          </button>
+          <button class="control-panels" onclick="mediaPlayer(`play`)" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+              </svg>
+          </button>
+          <button class="control-panels" onclick="mediaPlayer(`up`)" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+              </svg>
+          </button>
+          <button class="control-panels" onclick="mediaPlayer(`next`)" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-bar-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+          </button>
+        </div>
+        <div class="video-desc-box black">
+            <p class="video-desc-box-1">Boleh ke KAYA dengan SAHAM?</p>
+            <p class="video-desc-text-2">Ada orang kata main saham ini boleh jadi kaya? Tengok kawan-kawan main saham bukan main lagi beli kereta-kereta mewah? Tak tahu lah kalau kereta mewah itu dia sewa ke apa. Apa kata daripada seorang full time trader saham? Apakah semua ini betul? Kalau ya kenapa dan kalau tak, kenapa? Saya berminat nak main pelaburan saham ini !</p>
+        </div>
+      </div>
+      <div id="right-container">
+        <button class="video-list" onclick="switchVideo(1)">
+            <video src="./assets/Boleh ke KAYA dengan SAHAM.mp4" class="video"></video>
+            <p>Boleh ke KAYA dengan SAHAM?</p>
+        </button>
+        <button class="video-list" onclick="switchVideo(2)">
+            <video src="./assets/Gaji Youtube RM 8000 sebulan TAK CUKUP ! Ini sebabnya.mp4" class="video"></video>
+            <p>Gaji Youtube RM 8000 sebulan TAK CUKUP ! Ini sebabnya</p>
+        </button>
+        <button class="video-list" onclick="switchVideo(3)">
+            <video src="./assets/Hoarding dan Panic Buying! [Consumer] Ingat-ingatlah orang belakang.mp4" class="video"></video>
+            <p>Hoarding dan Panic Buying! [Consumer] Ingat-ingatlah orang belakang</p>
+        </button>
+        <button class="video-list" onclick="switchVideo(4)">
+            <video src="./assets/OPR naik ! Rugi beli rumah sekarang.mp4" class="video"></video>
+            <p>"OPR naik ! Rugi beli rumah sekarang !"</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+    const video = document.getElementById("video");
+    const topic = document.querySelector(".video-desc-box-1")
+    const topicDesc = document.querySelector(".video-desc-text-2")
+
+    let videoOne ="./assets/Boleh ke KAYA dengan SAHAM.mp4";
+    let videoOneTopic = "Boleh ke Kaya dengan Saham?";
+    let videoOneDesc ="Ada orang kata main saham ini boleh jadi kaya? Tengok kawan-kawan main saham bukan main lagi beli kereta-kereta mewah? Tak tahu lah kalau kereta mewah itu dia sewa ke apa. Apa kata daripada seorang full time trader saham? Apakah semua ini betul? Kalau ya kenapa dan kalau tak, kenapa? Saya berminat nak main pelaburan saham ini !"
+    
+    let videoTwo ="./assets/Gaji Youtube RM 8000 sebulan TAK CUKUP ! Ini sebabnya.mp4";
+    let videoTwoTopic = "Gaji Youtube RM 8000 sebulan TAK CUKUP ! Ini sebabnya";
+    let videoTwoDesc ="Saya tengok rancak betul Dr Adam buat video Youtube. Tertanya jugak lah berapa gaji Dr Adam bila buat video Youtube? Orang kata betul ke goyang kaki pun boleh dapat gaji macam gaji Doktor dan gaji Engineer? Kalau saya nak buat Youtube secara full time, berbaloi ke sebab kalau betul gaji besar, baik saya berhenti kerja, fokus buat video Youtube, kan?"
+    
+    let videoThree ="./assets/Hoarding dan Panic Buying! [Consumer] Ingat-ingatlah orang belakang.mp4";
+    let videoThreeTopic = "Hoarding dan Panic Buying! [Consumer] Ingat-ingatlah orang belakang";
+    let videoThreeDesc = `Assalamualaikum dan selamat pagi guys Okay hari ini I nak cakap pasal panic buying dan hoarding. Panic buying ini adalah bila you dengar ada satu isu eh "Eh ada barang itu dah nak habis". You pun terus pergi ke Tesco you pergi beli banyak banyak banyak letak dalam troli. Benda ini berlaku waktu nak lockdown Covid-19 hari itu itu dan hoarding pun lebih kurang samalah. Maknanya lepas you dah panic buying you beli banyak-banyak itu you kumpul banyak banyak letak dekat dalam kabinet rumahlah letak bawah mejalah.`
+    
+    let videoFour ="./assets/OPR naik ! Rugi beli rumah sekarang.mp4";
+    let videoFourTopic = `"OPR naik ! Rugi beli rumah sekarang"`;
+    let videoFourDesc ="Ada orang cakap OPR tengah naik ini, jangan beli rumah ! Nanti rugi! Bayar bulan-bulan jadi mahal, kalau beli rumah sekarang rugi besar! Tapi saya tengok Dr Adam Zubir rilek je beli rumah tak kira OPR naik atau jatuh. Nasihat kepada saya yang baru je nak beli rumah pertama apa dia? Patut ke saya beli rumah sekarang atau tunggu dulu OPR turun?"
+    
+    let count = 0
+    video.volume = 1;
+    
+    function mediaPlayer(x){
+        switch (x){
+            case `prev`:
+                count -= 1;
+                count == -4 || count == 4 ? count=0: count = count;
+                video.pause();
+                if (count == 0){
+                    video.setAttribute('src', videoOne);
+                    topic.innerHTML = videoOneTopic;
+                    topicDesc.innerHTML = videoOneDesc;
+                } else if (count == 3 || count == -3){
+                    video.setAttribute('src', videoTwo);
+                    topic.innerHTML = videoTwoTopic;
+                    topicDesc.innerHTML = videoTwoDesc;
+                } else if (count == 2 || count == -2){
+                    video.setAttribute('src', videoThree);
+                    topic.innerHTML = videoThreeTopic;
+                    topicDesc.innerHTML = videoThreeDesc;
+                } else {
+                    video.setAttribute('src', videoFour);
+                    topic.innerHTML = videoFourTopic;
+                    topicDesc.innerHTML = videoFourDesc;
+                }
+                console.log(count)
+                break;
+            case `down`:
+                if (video.volume > 0) {
+                    video.volume -= 0.1;
+                }
+                break;
+            case `play`:
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+                break;
+            case `up`:
+                if (video.volume < 1) {
+                    video.volume += 0.1;
+                }
+                break;
+            case `next`:
+            count += 1;
+                count == -4 || count == 4 ? count=0: count = count;
+                video.pause();
+                if (count == 0){
+                    video.setAttribute('src', videoOne);
+                    topic.innerHTML = videoOneTopic;
+                    topicDesc.innerHTML = videoOneDesc;
+                } else if (count == 1 || count == -1){
+                    video.setAttribute('src', videoTwo);
+                    topic.innerHTML = videoTwoTopic;
+                    topicDesc.innerHTML = videoTwoDesc;
+                } else if (count == 2 || count == -2){
+                    video.setAttribute('src', videoThree);
+                    topic.innerHTML = videoThreeTopic;
+                    topicDesc.innerHTML = videoThreeDesc;
+                } else {
+                    video.setAttribute('src', videoFour);
+                    topic.innerHTML = videoFourTopic;
+                    topicDesc.innerHTML = videoFourDesc;
+                }
+                console.log(count)
+                break;
+            default:
+                break;
+        }
+    }
+
+    function switchVideo(x){
+        switch(x){
+            case 1:
+                video.pause();
+                video.setAttribute('src', videoOne);
+                topic.innerHTML = videoOneTopic;
+                topicDesc.innerHTML = videoOneDesc;
+                count = 0;
+                break;
+            case 2:
+                video.pause();
+                video.setAttribute('src', videoTwo);
+                topic.innerHTML = videoTwoTopic;
+                topicDesc.innerHTML = videoTwoDesc;
+                count = 1;
+                break;
+            case 3:
+                video.pause();
+                video.setAttribute('src', videoThree);
+                topic.innerHTML = videoThreeTopic;
+                topicDesc.innerHTML = videoThreeDesc;
+                count = 2;
+                break;
+            case 4:
+                video.pause();
+                video.setAttribute('src', videoFour);
+                topic.innerHTML = videoFourTopic;
+                topicDesc.innerHTML = videoFourDesc;
+                count = 3;
+                break;
+            default:
+                break;
+        }
+    }
+</script>

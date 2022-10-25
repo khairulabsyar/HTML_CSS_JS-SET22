@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forex Exchange</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>Forex Exchange</h1>
+      <br />
+      <div id="input-quantity">
+        <h3 for="quantity">Amount</h3>
+        <br />
+        <input type="number" id="quantity" name="quantity" />
+      </div>
+      <br />
+      <div id="currency-input">
+        <h3 for="from-currency">From</h3>
+        <select name="from-currency" id="from-currency"></select>
+        <h3 for="to-currency">To</h3>
+        <select name="to-currency" id="to-currency"></select>
+      </div>
+      <br />
+      <button class="convert" onclick="convert()">Convert</button>
+      <br />
+      <h2 class="output">
+        <div>
+          <span class="convert-currency">Currency</span>
+          <span class="convert-amount">-</span>
+        </div>
+        <div>
+          Date:<span class="date"> - </span> Time:<span class="time"> - </span>
+        </div>
+        <button class="del-button" onclick="remove(this)">X</button>
+      </h2>
+      <br />
+      <button class="save" onclick="save()">Save</button>
+      <br />
+      <div id="save-currency"></div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

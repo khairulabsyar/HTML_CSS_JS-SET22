@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* #main-container-1 {
+    position: relative;
+    height: 100vh;
+    width: 900px;
+  }
+  #box-1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 0%;
+  }
+  #box-2 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: (-50%, -50%);
+  }
+  #box-3 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    right: 0%;
+  } */
+/* #main-container-2 {
+    height: 400px;
+    width: 900px;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .box {
+    height: 200px;
+    width: 200px;
+  }
+  #box-1 {
+    background-color: red;
+  }
+  #box-2 {
+    background-color: green;
+  }
+  #box-3 {
+    background-color: blue;
+  } */
+/* #main-container-3 {
+    height: 1200px;
+    width: 400px;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  #box-1 {
+    background-color: red;
+  }
+  #box-2 {
+    background-color: green;
+  }
+  #box-3 {
+    background-color: blue;
+  }
+  #box-4 {
+    background-color: gray;
+  }
+  p {
+    font-size: 25px;
+    color: white;
+  }
+  .circle {
+    height: 180px;
+    width: 180px;
+    border-radius: 1000px;
+    background-color: white;
+  } */
+#main-container-4 {
+  background-color: yellow;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+p,
+h1,
+h2 {
+  color: white;
+}
+p {
+  font-size: 20px;
+}
+a {
+  all: unset;
+}
+#content p {
+  font-size: 50px;
+}
+#sub-container-1 {
+  background-color: purple;
+  height: 90%;
+  width: 90%;
+  display: flex;
+}
+#navbar {
+  background-color: pink;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+#small-container {
+  width: 200px;
+  height: 50px;
+  outline: 1px solid gray;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-group {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#content {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

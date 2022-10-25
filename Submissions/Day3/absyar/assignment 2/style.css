@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#main-container {
+  width: 100vw;
+  height: 1500px;
+  background-color: #110f57;
+  position: relative;
+}
+
+.stuios9 {
+  position: absolute;
+  top: 75px;
+  left: 50px;
+  width: 250px;
+}
+
+.d1 {
+  position: absolute;
+  left: 145px;
+  top: 70px;
+  height: 37px;
+}
+.d2 {
+  position: absolute;
+  left: 154px;
+  top: 75px;
+  height: 33px;
+  z-index: 2;
+}
+.d3 {
+  position: absolute;
+  left: 145px;
+  top: 85px;
+  height: 42px;
+  z-index: 3;
+}
+#column {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  right: 50px;
+  top: -15px;
+}
+.column-1 {
+  background-color: #00fb82;
+  width: 25px;
+  height: 100px;
+  border-radius: 10px;
+}
+.column-2 {
+  background-color: #fff500;
+  width: 25px;
+  height: 150px;
+  border-radius: 10px;
+}
+.column-3 {
+  background-color: #00fb82;
+  width: 25px;
+  height: 200px;
+  border-radius: 10px;
+}
+.column-4 {
+  background-color: #fff500;
+  width: 25px;
+  height: 175px;
+  border-radius: 10px;
+}
+.work-together {
+  color: #00fb82;
+  font-family: "Vollkorn", serif;
+  font-size: 95px;
+  position: absolute;
+  top: 187px;
+  left: 50px;
+  width: 450px;
+}
+.lorem {
+  color: #e2e2e2;
+  font-family: "Lato", sans-serif;
+  width: 500px;
+  position: absolute;
+  top: 450px;
+  left: 50px;
+  font-size: 20px;
+  opacity: 70%;
+}
+#icons {
+  position: absolute;
+  top: 700px;
+  left: 50px;
+  display: flex;
+  gap: 10px;
+}
+.icons-logo {
+  border: 8px solid white;
+  background-color: white;
+  border-radius: 1000px;
+  height: 50px;
+  width: 50px;
+}
+#circles-box {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 450px;
+  transform: rotate(-10deg);
+  top: 500px;
+  right: -65px;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+  background-color: #ffffff;
+  opacity: 50%;
+}
+#circles-box-2 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 450px;
+  transform: rotate(-10deg);
+  top: 1000px;
+  left: -38px;
+}
+#main-picture {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+.circle-7 {
+  opacity: 100%;
+}

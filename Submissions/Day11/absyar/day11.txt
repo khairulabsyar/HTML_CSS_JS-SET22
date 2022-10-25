@@ -1,0 +1,226 @@
+================================
+Regex
+================================
+
+Section 1 - Literals
+________________________________
+MATCH
+dog
+hog
+123
+456123678
+
+DONT MATCH
+bog
+456
+
+Section 2 - Alternation
+________________________________
+
+MATCH
+backend
+frontend
+mobile
+
+engineers
+engineering
+
+Section 3 - Dot character (Wildcard)
+________________________________
+
+MATCH
+dog
+hog
+bog
+
+phone.
+
+Section 4 - Match certain character!
+________________________________
+
+MATCH
+dog
+hog
+bog
+
+Section 5 - Exclude certain character?
+________________________________
+
+MATCH
+dog
+hog
+bog
+
+^12
+112
+212
+
+DONT MATCH
+cog
+log
+jog
+
+312
+a12
+
+Section 6 - Match characters in a range
+________________________________
+
+MATCH
+card
+lard
+bard
+hard
+-ard
+
+1ey
+2fz
+3gx
+
+DONT MATCH
+yard
+xard
+zard
+
+1aa
+2bz
+3gu
+
+Section 7 - Repetitions
+________________________________
+
+MATCH
+carrrd
+larrd
+barrd
+harrrrd
+
+DONT MATCH
+card
+larrrrrd
+
+Section 8 - Repetitions in a range
+________________________________
+
+MATCH
+012345678
+
+12345abc1234...
+
+DONT MATCH
+012349679
+
+67890123abcd
+
+Section 9 - Repetitions in shorter way
+________________________________
+\w, \W, \d, \D, \s, \S
+
+MATCH
+
+3 cars
+4 cars
+5 cars
+6 cars
+7 cars
+8 cars
+9 cars
+
+DONT MATCH
+10 cars
+
+Section 10 - 0,1 or more repetitions
+________________________________
+
+MATCH
+bee
+bees
+
+color 
+colour
+
+efgh
+eeffggh
+eefgh
+
+DONT MATCH
+h
+efh
+
+Section 11 - Sometime on, sometime off
+________________________________
+
+MATCH
+bee
+bees
+
+Do you have 2 pencils?
+Do you have 30 pencils?
+Do you have 1 pencil?
+
+DONT MATCH
+Do you have 300 pencils?
+
+Section 12 - Please highlight all the white spaces
+________________________________
+
+MATCH
+- 1
+-    1
+
+
+DONT MATCH
+-1
+
+Section 13 - Begin till the end + word boundary
+________________________________
+
+MATCH
+I have a cat
+bath
+
+DONT MATCH
+You and I have a cat
+bathroom
+bath tub
+
+Section 14 - Grouping
+________________________________
+
+MATCH
+I love backend
+I love frontend
+I love mobile
+
+DONT MATCH
+I love to eat
+
+
+
+=================================
+Exercise
+=================================
+
+MATCH
+\+?\(?\d{3}?\)?\-?\d+
+
+0124567890
++60124567890
+012-4567890
+(012)-4567890
+
+
+MATCH all 4 letters word
+\b\w{4}\b
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+MATCH MM-YYYY from 01-1000-12-9999
+(0\d|1[1-2])\-\d{4}
+01-2020
+08-2022
+12-1900
+01-2013
+
+DONT MATCH
+13-2022
+11-980

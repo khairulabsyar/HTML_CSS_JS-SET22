@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+li:hover{
+    text-decoration: underline;    
+    text-underline-offset: 20px;
+}
+
+.screen{
+    margin-top: 10vh;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.movie-date-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.seat{
+    width: 60px;
+    height: 60px;
+    outline: black 0.5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seatSelection{    
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.filled{
+    background-color: cadetblue;
+}

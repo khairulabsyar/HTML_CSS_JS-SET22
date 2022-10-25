@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nike</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      .nike {
+        font-size: 225px;
+        position: absolute;
+        font-family: Montserrat;
+      }
+      .firstNI {
+        top: 30vh;
+        left: 40vh;
+      }
+      .secondKE {
+        top: 30vh;
+        right: 50vh;
+      }
+
+      .main-container {
+        background-color: black;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+      }
+      .second-container {
+        background: linear-gradient(
+          106.32deg,
+          rgba(255, 255, 255, 0.34) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        border: 2px solid white;
+        backdrop-filter: blur(200px);
+        border-radius: 80px;
+        position: absolute;
+        width: 85vw;
+        height: 85vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .third-container {
+        border: 2px solid white;
+        border-radius: 1000px;
+        position: absolute;
+        width: 75%;
+        height: 65%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .third-container img {
+        width: 89%;
+        position: absolute;
+        top: 15%;
+        left: 3rem;
+      }
+      .white-Nike {
+        width: 100px;
+        height: 50px;
+        display: inline;
+        position: absolute;
+        top: 5vh;
+        left: 5rem;
+      }
+      #navbar {
+        display: inline;
+        position: absolute;
+        top: 7vh;
+        left: 15rem;
+      }
+      #navbar li {
+        display: inline;
+        margin-right: 50px;
+      }
+      .search {
+        display: flex;
+        position: absolute;
+        top: 6vh;
+        right: 20rem;
+      }
+      .search img {
+        height: 25px;
+      }
+      .search p {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+      }
+      .shop-now {
+        background: #ff64a5;
+        border-radius: 10px;
+        position: absolute;
+        width: 125px;
+        height: 50px;
+        text-align: center;
+        top: 4vh;
+        right: 5rem;
+      }
+      .shop-now h3 {
+        padding: 13px;
+      }
+      .shoe {
+        width: 65%;
+        height: 100%;
+        position: absolute;
+        left: 12%;
+      }
+      .site-note {
+        position: absolute;
+        width: 260px;
+        top: 80vh;
+        right: 150px;
+      }
+      .site-note > p {
+        color: #9e9e9e;
+      }
+      .cart {
+        background: #4729ff;
+        border-radius: 10px;
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        top: 82vh;
+        left: 150px;
+      }
+      .cart img {
+        position: absolute;
+        height: 50%;
+        top: 22%;
+        left: 15%;
+      }
+      .cart h3 {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="second-container">
+        <section>
+          <img src="./Assets/whiteNike.png" alt="" class="white-Nike" />
+          <div id="navbar">
+            <ol>
+              <li>Man</li>
+              <li>Woman</li>
+              <li>Kid</li>
+              <li>Explore</li>
+            </ol>
+          </div>
+          <div class="search">
+            <img src="./Assets/magnifying.png" alt="" />
+            <p>Search</p>
+          </div>
+          <div class="shop-now">
+            <h3>Shop Now</h3>
+          </div>
+        </section>
+        <div class="third-container">
+          <img src="./Assets/silverNike.svg" alt="" />
+        </div>
+      </div>
+      <p class="nike firstNI">NI</p>
+      <img src="./Assets/shoe.png" alt="" class="shoe" />
+      <p class="nike secondKE">KE</p>
+      <div class="cart">
+        <img src="./Assets/cart.png" alt="" />
+        <h3>Add to Cart</h3>
+      </div>
+      <div class="site-note">
+        <h3>Ultra Mechanics</h3>
+        <p>
+          When a player steps in, a custom motor and gear train senses the
+          tension needed by the foot
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

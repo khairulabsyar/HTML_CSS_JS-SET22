@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Day 9 Assignment</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>Shopping List</h1>
+      <div id="shopping-cart">
+        <section class="shopping-list">
+          <form action="">
+            <input
+              type="text"
+              name="price"
+              class="price"
+              placeholder="Price"
+              onchange="calculate()"
+            />
+          </form>
+          <form action="">
+            <input
+              type="text"
+              name="quantity"
+              class="quantity"
+              placeholder="Qty"
+              onchange="calculate()"
+            />
+          </form>
+          <h2>Total : RM <span class="total-price">0</span></h2>
+        </section>
+      </div>
+      <button onclick="newShoppingList()">
+        Add new line & calculate Total Price
+      </button>
+      <div id="checkout">
+        <h2>Total : RM <span id="overall-price">0</span></h2>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

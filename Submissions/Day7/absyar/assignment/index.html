@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="calculator-body">
+        <h1 id="result" class="output-box">0</h1>
+        <div class="calc-box moccasin">
+          <h2 class="numpad extra-numpad" onclick="clean()">AC</h2>
+          <h2 class="numpad" onclick="positiveNegative()">±</h2>
+          <h2 class="numpad" onclick="calculate(`/`)">÷</h2>
+        </div>
+        <div class="calc-box moccasin">
+          <h2 class="numpad" onclick="calculate(`7`)">7</h2>
+          <h2 class="numpad" onclick="calculate(`8`)">8</h2>
+          <h2 class="numpad" onclick="calculate(`9`)">9</h2>
+          <h2 class="numpad" onclick="calculate(`*`)">x</h2>
+        </div>
+        <div class="calc-box moccasin">
+          <h2 class="numpad" onclick="calculate(`4`)">4</h2>
+          <h2 class="numpad" onclick="calculate(`5`)">5</h2>
+          <h2 class="numpad" onclick="calculate(`6`)">6</h2>
+          <h2 class="numpad" onclick="calculate(`-`)">-</h2>
+        </div>
+        <div class="calc-box moccasin">
+          <h2 class="numpad" onclick="calculate(`1`)">1</h2>
+          <h2 class="numpad" onclick="calculate(`2`)">2</h2>
+          <h2 class="numpad" onclick="calculate(`3`)">3</h2>
+          <h2 class="numpad" onclick="calculate(`+`)">+</h2>
+        </div>
+        <div class="calc-box moccasin">
+          <h2 class="numpad extra-numpad" onclick="calculate(`0`)">0</h2>
+          <h2 class="numpad" onclick="calculate(`.`)">.</h2>
+          <h2 class="numpad" onclick="calculating()">=</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script.js"></script>

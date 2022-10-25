@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>To Do List</h1>
+      <div id="todo-cart">
+        <section class="todo-list">
+          <form action="">
+            <input
+              type="text"
+              name="todo"
+              id="todo"
+              placeholder="What do you want TO DO"
+            />
+          </form>
+          <button onclick="newToDoList()">Add new To Do</button>
+        </section>
+      </div>
+      <h1>Pending To Do</h1>
+      <section id="needtodo">
+        <div class="needtodo-list">
+          <h3>To Do assignment</h3>
+          <input
+            type="checkbox"
+            class="to-complete"
+            name="to-complete"
+            onclick="complete(this)"
+          />
+        </div>
+      </section>
+      <h1>Completed To Do</h1>
+      <section id="completedtodo">
+        <div class="completedtodo-list">
+          <h3><strike>Final Assignment</strike></h3>
+          <input
+            type="button"
+            value="Undo"
+            class="undo"
+            onclick="undoToDo(this)"
+          />
+          <input
+            type="button"
+            value="Delete"
+            class="delete"
+            onclick="deleteToDo(this)"
+          />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

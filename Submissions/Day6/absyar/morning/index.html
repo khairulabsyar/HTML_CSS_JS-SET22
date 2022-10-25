@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Day 6 JS</title>
+  </head>
+  <body>
+    <container id="main-container">
+      <div class="white box">
+        <p id="number">0</p>
+        <div class="increase-decrease">
+          <button id="decrease-counter" onclick="counterModifier(0)">
+            Decrease
+          </button>
+          <button id="increase-counter" onclick="counterModifier(1)">
+            Increase
+          </button>
+        </div>
+      </div>
+      <div class="white box-small">
+        <video id="video-player" width="1000px" height="500px" controls>
+          <source src="./assets/video1.mp4" type="video/mp4" />
+        </video>
+        <div class="increase-decrease">
+          <button onclick="videoController(`play`)">Play / Pause</button>
+          <button onclick="videoController(`reset`)">Reset</button>
+          <button onclick="videoController(`down`)">Vol Down</button>
+          <button onclick="videoController(`up`)">Vol Up</button>
+        </div>
+      </div>
+    </container>
+  </body>
+</html>
+
+<script>
+  let counterValue = 0;
+  const number = document.getElementById(`number`);
+  function counterModifier(x) {
+    switch (x) {
+      case 0:
+        if (counterValue > 0) {
+          counterValue--;
+          number.innerHTML = counterValue;
+        }
+        break;
+      case 1:
+        counterValue++;
+        number.innerHTML = counterValue;
+        break;
+      default:
+        break;
+    }
+    if (counterValue > 0 && counterValue < 10) {
+      number.style.color = "yellow";
+      number.style.backgroundColor = `black`;
+    } else if (counterValue >= 10) {
+      number.style.color = "red";
+      number.style.backgroundColor = `green`;
+    } else {
+      number.style.color = "black";
+      number.style.backgroundColor = `white`;
+    }
+  }
+  //   function decrease() {
+  //     counterValue--;
+  //     number.innerHTML = counterValue;
+  //   }
+  //   function increase() {
+  //     counterValue++;
+  //     number.innerHTML = counterValue;
+  //   }
+  const video = document.querySelector(`#video-player`);
+  video.volume = 1;
+  let videoVolume = video.volume;
+  console.log({ video });
+  const videoController = (x) => {
+    switch (x) {
+      case `play`:
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+        break;
+      case `reset`:
+        video.load();
+        video.autoplay = true;
+        // video.currentTime = 0;
+        break;
+      case `down`:
+        if (video.volume > 0) {
+          video.volume -= 0.1;
+        }
+        break;
+      case `up`:
+        if (video.volume < 1) {
+          video.volume += 0.1;
+        }
+        break;
+      default:
+        break;
+    }
+  };
+</script>

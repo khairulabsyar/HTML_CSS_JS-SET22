@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  flex-direction: column;
+}
+#inner-container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: white;
+  overflow: hidden;
+}
+#cat {
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" moznomarginboxes mozdisallowselectionprint>
+  <head>
+    <%- include('../components/head'); %>
+  </head>
+  <body>
+    <div
+      class="w-screen min-h-screen flex flex-col gap-5 items-center py-8 bg-gray-200 print:py-0"
+    >
+      <div id="resume" class="w-screen max-w-[900px] print:w-screen">
+        <div class="flex flex-col gap-1 bg-blue-900 text-white p-8 print:p-10">
+          <h1 class="text-3xl font-bold"><%= data.fullName %></h1>
+          <h3 class="text-lg"><%= data.currentPosition %></h3>
+        </div>
+        <div class="bg-white flex flex-col gap-5 p-8 print:p-10">
+          <p class="text-sm text-gray-600"><%= data.selfDescription %></p>
+          <div class="flex flex-col gap-3">
+            <h4 class="text-lg text-gray-900 font-bold border-b pb-3">
+              Experiences
+            </h4>
+            <!-- experience array -->
+            <% data.experience.forEach(item => { %>
+            <div class="flex justify-between">
+              <h5
+                class="text-base text-gray-900 font-bold"
+                style="width: 100px"
+              >
+                <%= item.year %>
+              </h5>
+              <div class="flex flex-col gap-1 w-[730px] print:w-[85%]">
+                <h6 class="text-base text-gray-900"><%= item.position %></h6>
+                <p class="text-sm text-gray-600 italic">
+                  <%= item.placeOfWork %>
+                </p>
+                <p class="text-sm text-gray-600"><%= item.description %></p>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+      <button
+        onclick="window.print()"
+        class="w-screen max-w-[900px] px-6 py-4 bg-blue-600 text-white font-medium text-base leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+      >
+        Print
+      </button>
+    </div>
+  </body>
+</html>

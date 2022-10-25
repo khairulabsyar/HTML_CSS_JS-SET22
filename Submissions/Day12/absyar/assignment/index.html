@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cinema</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="navbar">
+        <a href="./index.html">
+          <h3>Home</h3>
+        </a>
+        <a href="./statistic.html">
+          <h3>Statistics</h3>
+        </a>
+      </div>
+      <div id="movie-select">
+        <label for="movies">Choose a movie:</label>
+        <select name="movies" id="movies" onchange="movieSelect()">
+          <option value="inception">Inception</option>
+          <option value="lotr">LOTR</option>
+          <option value="got">Game of Thrones</option>
+          <option value="hotd">House of the Dragon</option>
+        </select>
+      </div>
+      <br />
+      <div class="cinema-screen"><h3>Screen</h3></div>
+      <br />
+      <div id="seats-setting">
+        <div class="seats" id="A1" onclick="chooseSeat(this)">A1</div>
+        <div class="seats" id="A2" onclick="chooseSeat(this)">A2</div>
+        <div class="seats" id="A3" onclick="chooseSeat(this)">A3</div>
+        <div class="seats" id="A4" onclick="chooseSeat(this)">A4</div>
+        <div class="seats" id="A5" onclick="chooseSeat(this)">A5</div>
+        <div class="seats" id="A6" onclick="chooseSeat(this)">A6</div>
+        <div class="seats" id="A7" onclick="chooseSeat(this)">A7</div>
+        <div class="seats" id="A8" onclick="chooseSeat(this)">A8</div>
+        <div class="seats" id="A9" onclick="chooseSeat(this)">A9</div>
+        <div class="seats" id="B1" onclick="chooseSeat(this)">B1</div>
+        <div class="seats" id="B2" onclick="chooseSeat(this)">B2</div>
+        <div class="seats" id="B3" onclick="chooseSeat(this)">B3</div>
+        <div class="seats" id="B4" onclick="chooseSeat(this)">B4</div>
+        <div class="seats" id="B5" onclick="chooseSeat(this)">B5</div>
+        <div class="seats" id="B6" onclick="chooseSeat(this)">B6</div>
+        <div class="seats" id="B7" onclick="chooseSeat(this)">B7</div>
+        <div class="seats" id="B8" onclick="chooseSeat(this)">B8</div>
+        <div class="seats" id="B9" onclick="chooseSeat(this)">B9</div>
+        <div class="seats" id="C1" onclick="chooseSeat(this)">C1</div>
+        <div class="seats" id="C2" onclick="chooseSeat(this)">C2</div>
+        <div class="seats" id="C3" onclick="chooseSeat(this)">C3</div>
+        <div class="seats" id="C4" onclick="chooseSeat(this)">C4</div>
+        <div class="seats" id="C5" onclick="chooseSeat(this)">C5</div>
+        <div class="seats" id="C6" onclick="chooseSeat(this)">C6</div>
+        <div class="seats" id="C7" onclick="chooseSeat(this)">C7</div>
+        <div class="seats" id="C8" onclick="chooseSeat(this)">C8</div>
+        <div class="seats" id="C9" onclick="chooseSeat(this)">C9</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

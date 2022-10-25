@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./statistics.html"><li>Statistics</li></a>
+            </ul>
+        </nav>
+        <div class="movie-date-container">
+            <div class="pick-movie-container">
+                <label for="movies">Choose a movie:</label>
+                <select id="movies" name="movies" onchange="movieSelection()">
+                    <option value="inception">Inception</option>
+                    <option value="only-yesterday">Only Yesterday</option>
+                    <option value="lord-of-the-rings">Lord of the Rings</option>
+                    <option value="a-silent-voice">A Silent Voice</option>
+                </select>
+            </div>
+        </div>
+        <div class="screen">
+            <p>Screen</p>
+        </div>
+
+        <div id="seatSelection">
+            <div class="seat" id="A1">A1</div>
+            <div class="seat" id="A2">A2</div>
+            <div class="seat filled" id="A3">A3</div>
+            <div class="seat" id="A4">A4</div>
+            <div class="seat" id="A5">A5</div>
+            <div class="seat" id="A6">A6</div>
+            <div class="seat" id="A7">A7</div>
+            <div class="seat" id="A8">A8</div>
+            <div class="seat" id="A9">A9</div>
+            <div class="seat" id="A10">A10</div>
+            <div class="seat" id="A11">A11</div>
+            <div class="seat" id="A12">A12</div>
+            <div class="seat" id="A13">A13</div>
+            <div class="seat" id="A14">A14</div>
+            <div class="seat" id="B1">B1</div>
+            <div class="seat" id="B2">B2</div>
+            <div class="seat" id="B3">B3</div>
+            <div class="seat" id="B4">B4</div>
+            <div class="seat" id="B5">B5</div>
+            <div class="seat" id="B6">B6</div>
+            <div class="seat" id="B7">B7</div>
+            <div class="seat" id="B8">B8</div>
+            <div class="seat" id="B9">B9</div>
+            <div class="seat" id="B10">B10</div>
+            <div class="seat" id="B11">B11</div>
+            <div class="seat" id="B12">B12</div>
+            <div class="seat" id="B13">B13</div>
+            <div class="seat" id="B14">B14</div>
+            <div class="seat" id="C1">C1</div>
+            <div class="seat" id="C2">C2</div>
+            <div class="seat" id="C3">C3</div>
+            <div class="seat filled" id="C4">C4</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script src="./script.js"></script>

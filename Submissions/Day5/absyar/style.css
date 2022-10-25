@@ -1,0 +1,118 @@
+/* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  all: unset;
+}
+#main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+/* NAVBAR */
+.navbar {
+  width: 100vw;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.white {
+  color: white;
+}
+.navbar-right {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.unordered-list {
+  display: flex;
+  gap: 25px;
+}
+.list {
+  list-style: none;
+  font-size: 20px;
+  transition: all 1000ms;
+}
+.list:hover {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+.navbar .bi {
+  font-size: 20px;
+  cursor: pointer;
+}
+.menu-icon {
+  display: none;
+}
+
+/* HERO */
+.hero-container {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+/* CARD CONTAINER */
+#card-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+  /* height: 1000px; */
+}
+.card-list {
+  width: 100vw;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0 10px 0;
+  gap: 25px;
+}
+.card {
+  width: 200px;
+  height: 350px;
+  transition: all 1s;
+}
+.card:hover {
+  background-color: black;
+  color: wheat;
+  border-radius: 100px;
+}
+/* TABLE 900pxx */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .card {
+    background-color: aqua;
+  }
+}
+
+/* MOBILE RESOLUTION */
+@media screen and (max-width: 700px) {
+  .menu-icon {
+    display: block;
+  }
+  .unordered-list {
+    display: none;
+  }
+  .card-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+}

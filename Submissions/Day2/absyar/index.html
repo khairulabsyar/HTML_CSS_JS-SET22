@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+    <!-- Internal CSS -->
+    <style>
+      /* RESET */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      /* Navbar */
+      .navbar {
+        background-color: gray;
+      }
+      .navbar h1 {
+        color: orange;
+        display: inline;
+      }
+      .navbar ul {
+        list-style: none;
+        display: inline;
+        float: right;
+        padding-top: 20px;
+      }
+      .navbar li {
+        display: inline;
+        padding-right: 10px;
+      }
+      /* Hero */
+      .hero {
+        background-color: cyan;
+        text-align: center;
+        height: 200px;
+        width: 100%;
+      }
+      .hero h2 {
+        color: green;
+
+        padding-top: 50px;
+      }
+      /* Section-1 */
+      .section-1 {
+        display: block;
+        height: 200px;
+        width: 100%;
+      }
+      .section-1 .column-left {
+        float: left;
+        height: 200px;
+        width: 30%;
+      }
+      .section-1 .column-right {
+        float: right;
+        background-image: url(https://www.thestatesman.com/wp-content/uploads/2022/07/Untitled-design-4.jpg);
+        height: 100%;
+        width: 70%;
+        background-size: cover;
+        background-position: right;
+        text-align: center;
+      }
+      .section-1 button {
+        margin-top: 100px;
+      }
+      /* Section-2 */
+      .section-2 {
+        background-color: blue;
+        display: block;
+        padding: 10px;
+        height: 200px;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Internal CSS -->
+    <div class="navbar">
+      <h1>Logo</h1>
+      <ul>
+        <li>About</li>
+        <li>Ticket</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      <h2>Welcome to New York</h2>
+      <button>Register</button>
+    </div>
+
+    <div class="section-1">
+      <div class="column-left">
+        <h2>Welcome to London</h2>
+        <p>Things to do here</p>
+        <ol>
+          <li>Buy ciggies</li>
+          <li>Watch Big Ben</li>
+          <li>Walk on London Bridge</li>
+        </ol>
+      </div>
+      <div class="column-right">
+        <button>Vacay me</button>
+      </div>
+    </div>
+
+    <div class="section-2">
+      <div><button>Hit me</button></div>
+    </div>
+    <!-- inline CSS -->
+    <!-- <div style="background-color: gray">
+      <h1 style="color: orange; display: inline">Logo</h1>
+      <ul style="list-style: none; display: inline; float: right">
+        <li style="display: inline">About</li>
+        <li style="display: inline">Ticket</li>
+        <li style="display: inline">Contact</li>
+      </ul>
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Result</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="result-section" style="background-color: <%=backgroundColor%>">
+        <h3 id="result-desc">
+          <p>
+            Dear <span><%= name %></span>, after some prrocessing behind the
+            scene,
+          </p>
+          <p>we would like to share our finding of your BMI.</p>
+          <p>Based on your age, <span><%= age %></span>, your BMI is:</p>
+          <p><span><%= bmiCalc %></span></p>
+          <p><span><%= bmiFinal %></span></p>
+        </h3>
+      </div>
+      <a href="/"><h3>Return Home</h3></a>
+    </div>
+  </body>
+</html>
